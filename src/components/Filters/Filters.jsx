@@ -4,14 +4,13 @@ import {
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { format, parseISO } from "date-fns";
+import { format } from "date-fns";
 import React, { useEffect, useState } from "react";
 import { Calendar } from "react-date-range";
-import "react-date-range/dist/styles.css"; // main style file
-import "react-date-range/dist/theme/default.css"; // theme css file
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
+import "react-date-range/dist/styles.css";
+import "react-date-range/dist/theme/default.css";
 import { useDispatch } from "react-redux";
+import Select from "react-select";
 import properties from "../../data/properties";
 import { setProperties } from "../../store/propertySlice";
 import {
@@ -26,8 +25,6 @@ import {
   priceOptions,
   propTypeOptions,
 } from "../../utils/selecOptions";
-
-import Select from "react-select";
 import "./Filters.scss";
 
 const FiltersHeader = () => (
@@ -52,10 +49,6 @@ const Filters = () => {
   const [isFiltered, setIsFiltered] = useState(false);
   const [showCalendar, setShowCalendar] = useState(false);
   const dispatch = useDispatch();
-
-  const formatDate = (date) => {
-    return format(parseISO(date), "dd-MM-yyyy");
-  };
 
   useEffect(() => {
     let result = unFilteredData;
@@ -137,13 +130,6 @@ const Filters = () => {
               className="calendarElement"
             />
           )}
-          {/* <DatePicker
-            selected={date}
-            onChange={(date) => setDate(date)}
-            dateFormat="dd/MM/yyyy"
-            minDate={new Date()}
-            placeholderText={"Select Move In Date"}
-          /> */}
         </div>
         <div className="filter-price">
           <label className="input-label">Price</label>

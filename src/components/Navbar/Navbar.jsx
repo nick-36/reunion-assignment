@@ -11,33 +11,31 @@ const Navbar = () => {
         <div className="nav-left">
           <ul className="nav-list-items">
             <li className="list-item">
-              <a href="/" className="company-logo">
+              <span className="company-logo">
                 <img src={companyLogo} alt="" className="logo-img" />
                 <span>Estatery</span>
-              </a>
+              </span>
             </li>
             <li className="list-item">
-              <a href="/" className="active">
-                Rent
-              </a>
+              <span className="active">Rent</span>
             </li>
             <li className="list-item">
-              <a href="/">Buy</a>
+              <span>Buy</span>
             </li>
             <li className="list-item">
-              <a href="/">Sell</a>
+              <span>Sell</span>
             </li>
             <li className="list-item">
-              <a href="/" className="item-explore">
+              <span className="item-explore">
                 <span> ManageProperty</span>
                 <FontAwesomeIcon icon={faChevronDown} />
-              </a>
+              </span>
             </li>
             <li className="list-item">
-              <a href="/" className="item-explore">
+              <span className="item-explore">
                 <span>Resources</span>
                 <FontAwesomeIcon icon={faChevronDown} />
-              </a>
+              </span>
             </li>
           </ul>
         </div>
