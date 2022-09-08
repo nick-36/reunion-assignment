@@ -1,0 +1,92 @@
+@import "../../sass/main.scss";
+
+.card {
+  background-color: $color-white;
+  border-radius: 10px;
+
+  &-img-container {
+    width: 100%;
+    .prop-img {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      width: 300px;
+      height: 20rem;
+
+      object-fit: cover;
+    }
+  }
+
+  &-prop-info {
+    padding: 2rem 2rem;
+
+    .price {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &-text {
+        font-size: 1.8rem;
+        color: $color-primary;
+        letter-spacing: 1px;
+      }
+      &-duration {
+        color: $color-dark-gray;
+        font-size: 1.4rem;
+      }
+      &-icon-box {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid $color-light-gray;
+      }
+      .icon-like {
+        font-size: 14px;
+        color: $color-primary;
+        cursor: pointer;
+      }
+    }
+    .details {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      .prop-title {
+        color: $color-black;
+        text-transform: capitalize;
+      }
+
+      .prop-address {
+        font-size: 1.2rem;
+        color: $color-dark-gray;
+      }
+    }
+    .line {
+      height: 1px;
+      background-color: $color-light-gray;
+      margin: 1rem 0;
+    }
+    .features-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .features {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        &-text {
+          font-size: 1.2rem;
+          font-weight: 500;
+          color: $color-dark-gray;
+        }
+
+        &-icon {
+          font-size: 1.2rem;
+          color: $color-primary;
+        }
+      }
+    }
+  }
+}
