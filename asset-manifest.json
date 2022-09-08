@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/reunion-assignment/static/css/main.8531ee7d.css",
-    "main.js": "/reunion-assignment/static/js/main.191c1a7c.js",
+    "main.css": "/reunion-assignment/static/css/main.78d8b97b.css",
+    "main.js": "/reunion-assignment/static/js/main.86a2502e.js",
     "index.html": "/reunion-assignment/index.html",
-    "main.8531ee7d.css.map": "/reunion-assignment/static/css/main.8531ee7d.css.map",
-    "main.191c1a7c.js.map": "/reunion-assignment/static/js/main.191c1a7c.js.map"
+    "main.78d8b97b.css.map": "/reunion-assignment/static/css/main.78d8b97b.css.map",
+    "main.86a2502e.js.map": "/reunion-assignment/static/js/main.86a2502e.js.map"
   },
   "entrypoints": [
-    "static/css/main.8531ee7d.css",
-    "static/js/main.191c1a7c.js"
+    "static/css/main.78d8b97b.css",
+    "static/js/main.86a2502e.js"
   ]
 }
